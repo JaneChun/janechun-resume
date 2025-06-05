@@ -139,91 +139,37 @@ export default function Resume() {
 							</Text>
 						</View>
 
-						<Text style={styles.subTitle}>서비스 배포 및 운영</Text>
-						<Text style={styles.bullet}>
-							- System daemon을 활용한 백그라운드 서비스 배포 및 운영 관리
-						</Text>
-						<View style={styles.work}></View>
+						<View style={styles.work}>
+							<Text style={styles.subTitle}>서비스 배포 및 운영</Text>
+							<Text style={styles.bullet}>
+								- System daemon을 활용한 백그라운드 서비스 배포 및 운영 관리
+							</Text>
+						</View>
 
-						<Text style={styles.subTitle}>자동화 및 운영 효율화</Text>
-						<Text style={styles.bullet}>
-							- Playwright로 스크린샷 자동화 툴 개발
-						</Text>
-						<Text style={styles.bullet}>
-							- Node.js로 Excel 다운로드 자동화 툴 개발
-						</Text>
-						<Text style={styles.bullet}>
-							- Cron 기반 Slackbot 자동 보고 시스템 구축
-						</Text>
-						<View style={styles.work}></View>
-					</View>
-				</View>
-			</View>
+						<View style={styles.work}>
+							<Text style={styles.subTitle}>자동화 및 운영 효율화</Text>
+							<Text style={styles.bullet}>
+								- Playwright로 스크린샷 자동화 툴 개발
+							</Text>
+							<Text style={styles.bullet}>
+								- Node.js로 Excel 다운로드 자동화 툴 개발
+							</Text>
+							<Text style={styles.bullet}>
+								- Cron 기반 Slackbot 자동 보고 시스템 구축
+							</Text>
+						</View>
 
-			<View style={styles.section}>
-				<Text style={styles.sectionTitle}>학력</Text>
-				<View style={{ gap: 16 }}>
-					<View style={styles.columnsContainer}>
-						<Image
-							source={require('../assets/images/university_logo.svg')}
-							style={styles.image}
-							resizeMode='contain'
-						/>
-
-						<View>
-							<Text style={styles.title}>한양대학교</Text>
+						<View style={[styles.work, { marginBottom: 0 }]}>
+							<Text style={styles.subTitle}>기술 스택</Text>
 							<Text style={styles.text}>
-								<Text style={styles.text}>2017.03 - 2022.08</Text>
-								<Text style={styles.divider}>|</Text>
-								<Text style={styles.text}>영미언어문화학과</Text>
-								<Text style={styles.divider}>|</Text>
-								<Text style={styles.text}>3.8 / 4.5</Text>
+								Vue.js, Sass, Bootstrap, Apache ECharts, FullCalendar, MapLibre,
+								Carbone, pdfmake
+							</Text>
+							<Text style={styles.text}>
+								Linux, Node.js, Git, Slack, Playwright, Postman, Figma
 							</Text>
 						</View>
 					</View>
-
-					<View style={styles.columnsContainer}>
-						<Image
-							source={require('../assets/images/bootcamp_logo.jpg')}
-							style={styles.image}
-							resizeMode='contain'
-						/>
-						<View>
-							<Text style={styles.title}>코드스테이츠</Text>
-							<Text style={styles.text}>
-								<Text style={styles.text}>2022.08 - 2023.02</Text>
-								<Text style={styles.divider}>|</Text>
-								<Text style={styles.text}>프론트엔드 부트캠프 41기</Text>
-							</Text>
-						</View>
-					</View>
-				</View>
-			</View>
-
-			<View style={styles.section}>
-				<Text style={styles.sectionTitle}>스킬</Text>
-				<View style={styles.skillContainer}>
-					{[
-						'TypeScript',
-						'React Native',
-						'Expo',
-						'React',
-						'Vue.js',
-						'Linux',
-						'Redux',
-						'Zustand',
-						'React Query',
-						'Node.js',
-						'Firebase',
-						'AWS',
-						'Postman',
-						'Git',
-						'Figma',
-					].map((name, i) => (
-						<Text key={i} style={styles.chip}>
-							{name}
-						</Text>
-					))}
 				</View>
 			</View>
 
@@ -295,14 +241,79 @@ export default function Resume() {
 							<Text style={styles.text}>2020.10.25</Text>
 						</View>
 					</View>
+				</View>
+			</View>
 
-					{/* <Text style={styles.text}>영어 | 비즈니스 회화 가능</Text> */}
+			<View style={styles.section}>
+				<Text style={styles.sectionTitle}>학력</Text>
+				<View style={{ gap: 16 }}>
+					<View style={styles.columnsContainer}>
+						<Image
+							source={require('../assets/images/university_logo.svg')}
+							style={styles.image}
+							resizeMode='contain'
+						/>
+
+						<View>
+							<Text style={styles.title}>한양대학교</Text>
+							<Text style={styles.text}>
+								<Text style={styles.text}>2017.03 - 2022.08</Text>
+								<Text style={styles.divider}>|</Text>
+								<Text style={styles.text}>영미언어문화학과</Text>
+								<Text style={styles.divider}>|</Text>
+								<Text style={styles.text}>3.8 / 4.5</Text>
+							</Text>
+						</View>
+					</View>
+
+					<View style={styles.columnsContainer}>
+						<Image
+							source={require('../assets/images/bootcamp_logo.jpg')}
+							style={styles.image}
+							resizeMode='contain'
+						/>
+						<View>
+							<Text style={styles.title}>코드스테이츠</Text>
+							<Text style={styles.text}>
+								<Text style={styles.text}>2022.08 - 2023.02</Text>
+								<Text style={styles.divider}>|</Text>
+								<Text style={styles.text}>프론트엔드 부트캠프 41기</Text>
+							</Text>
+						</View>
+					</View>
+				</View>
+			</View>
+
+			<View style={styles.section}>
+				<Text style={styles.sectionTitle}>스킬</Text>
+				<View style={styles.skillContainer}>
+					{[
+						'TypeScript',
+						'React Native',
+						'Expo',
+						'React',
+						'Vue.js',
+						'Linux',
+						'Redux',
+						'Zustand',
+						'React Query',
+						'Node.js',
+						'Firebase',
+						'AWS',
+						'Postman',
+						'Git',
+						'Figma',
+					].map((name, i) => (
+						<Text key={i} style={styles.chip}>
+							{name}
+						</Text>
+					))}
 				</View>
 			</View>
 
 			<View style={styles.section}>
 				<Text style={styles.sectionTitle}>프로젝트</Text>
-				<View style={{ gap: 32 }}>
+				<View style={{ gap: 48 }}>
 					<View style={styles.columnsContainer}>
 						<Image
 							source={require('../assets/images/indexly_logo.png')}
@@ -431,7 +442,7 @@ const styles = StyleSheet.create({
 		marginBottom: 12,
 	},
 	section: {
-		marginBottom: 48,
+		marginBottom: 60,
 	},
 	contact: {
 		flexDirection: 'row',
