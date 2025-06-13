@@ -45,6 +45,13 @@ export default function Resume() {
 				</View>
 
 				<View style={styles.contact}>
+					<Link href='http://janechun-portfolio.s3-website.ap-northeast-2.amazonaws.com/'>
+						<Text style={styles.link}>
+							<Feather name='link' style={styles.icon} />
+							<Text>포트폴리오</Text>
+						</Text>
+					</Link>
+
 					<Link href='https://github.com/JaneChun'>
 						<Text style={styles.link}>
 							<Feather name='link' style={styles.icon} />
@@ -56,13 +63,6 @@ export default function Resume() {
 						<Text style={styles.link}>
 							<Feather name='link' style={styles.icon} />
 							<Text>Tistory</Text>
-						</Text>
-					</Link>
-
-					<Link href='https://velog.io/@wlwl99'>
-						<Text style={styles.link}>
-							<Feather name='link' style={styles.icon} />
-							<Text>Velog</Text>
 						</Text>
 					</Link>
 				</View>

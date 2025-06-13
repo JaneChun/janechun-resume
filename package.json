@@ -11,6 +11,7 @@
 		"web": "expo start --web",
 		"lint": "expo lint",
 		"build": "npx expo export --platform web",
+		"predeploy": "npm run build",
 		"deploy": "aws s3 sync ./dist s3://janechun.site --delete"
 	},
 	"dependencies": {
