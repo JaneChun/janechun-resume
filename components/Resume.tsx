@@ -70,11 +70,8 @@ export default function Resume() {
 
 			<View style={styles.section}>
 				<Text style={styles.text}>
-					안녕하세요, 프론트엔드 개발자 천지은입니다.
-				</Text>
-				<Text style={styles.text}>
-					사람들이 일상에서 자주사용하는 모바일 앱을 만들고 싶어 개발자가
-					되었습니다.
+					안녕하세요, 사람들의 일상에 가치를 더하는 서비스를 만들고 싶은 개발자
+					천지은입니다.
 				</Text>
 				<Text style={styles.text}>
 					공공기관 시스템을 개발하며 웹 개발 경험을 쌓았으나
@@ -88,8 +85,8 @@ export default function Resume() {
 					모바일 개발로 전향하게 되었습니다.
 				</Text>
 				<Text style={styles.text}>
-					현재는 React Native로 모바일 앱을 개발하며, 일상을 더 편리하게 만드는
-					앱을 직접 구현해나가고 있습니다.
+					현재는 React Native로 모바일 앱을 직접 기획하고 개발하며, 일상을 더
+					편리하게 만드는 앱을 구현해나가고 있습니다.
 				</Text>
 			</View>
 
@@ -119,54 +116,80 @@ export default function Resume() {
 						<Text style={styles.text}>2023.09 - 2024.10 (1년 2개월)</Text>
 
 						<Text style={styles.text}>
-							공공기관 대상의 IoT 기반 시설관리 시스템의 프론트엔드 유지보수 및
+							공공기관 대상 IoT 기반 시설관리 시스템의 프론트엔드 유지보수 및
 							기능 고도화
 						</Text>
 
 						<View style={[styles.work, { marginTop: 12 }]}>
 							<Text style={styles.subTitle}>프론트엔드 개발</Text>
 							<Text style={styles.bullet}>
-								- MapTiler를 활용한 지도 구현 및 기능 개선, 유지보수
+								• 지도 기능: MapTiler 및 MapLibre 기반 지도 기능 고도화 및
+								유지보수
 							</Text>
 							<Text style={styles.bullet}>
-								- 조건별 데이터 조회가 가능한 검색 필터 및 그리드 UI 개발
+								• 조건부 필터 및 그리드 UI: 복합 조건 검색 구현 및 리팩토링으로
+								검색 편의성·조회 속도 최적화
 							</Text>
 							<Text style={styles.bullet}>
-								- Apache ECharts를 활용한 데이터 시각화 및 차트 구현
+								• 데이터 시각화: Apache ECharts를 활용한 센서 데이터 그래프 및
+								차트 구현
 							</Text>
 							<Text style={styles.bullet}>
-								- FullCalendar 기반 일정 관리 및 센서 유지보수 프로세스 최적화
+								• 일정 관리 UI 개선: FullCalendar 기반 센서 유지보수 관리 기능
+								개선 , 코드 및 데이터 구조 리팩토링으로 성능 최적화
+							</Text>
+							<Text style={styles.bullet}>
+								• 쿼리 최적화: ElasticSearch 집계 쿼리로 복수 API 호출 통합,
+								장기간 조회 시 페이지 로딩 속도 기존 대비 3배 이상 향상
 							</Text>
 						</View>
 
 						<View style={styles.work}>
-							<Text style={styles.subTitle}>서비스 배포 및 운영</Text>
+							<Text style={styles.subTitle}>서비스 배포 및 운영 자동화</Text>
 							<Text style={styles.bullet}>
-								- System daemon을 활용한 백그라운드 서비스 배포 및 운영 관리
+								• System daemon / Docker 기반 서버에 직접 접속하여 정기적 서비스
+								배포 및 운영
+							</Text>
+							<Text style={styles.bullet}>
+								• Playwright 기반 자동 스크린샷 툴 개발로 분기별 보고서 작성
+								시간 약 80% 단축
+							</Text>
+							<Text style={styles.bullet}>
+								• Node.js로 Excel 자동 다운로드 스크립트 작성, 반복 업무
+								자동화로 업무 효율성 향상
+							</Text>
+							<Text style={styles.bullet}>
+								• Slackbot + Cron을 활용한 일일 Slack 자동 보고 시스템 구축
 							</Text>
 						</View>
 
 						<View style={styles.work}>
-							<Text style={styles.subTitle}>자동화 및 운영 효율화</Text>
+							<Text style={styles.subTitle}>협업 및 커뮤니케이션</Text>
 							<Text style={styles.bullet}>
-								- Playwright로 스크린샷 자동화 툴 개발
+								• 백엔드·인프라 개발자와의 기능 연동 및 버전 대응 협업, 안정적인
+								배포 환경 유지
 							</Text>
 							<Text style={styles.bullet}>
-								- Node.js로 Excel 다운로드 자동화 툴 개발
+								• 기획자와 신규 버전 기능 협의, 디자이너 UI 설계안에 기반 화면
+								개발
 							</Text>
 							<Text style={styles.bullet}>
-								- Cron 기반 Slackbot 자동 보고 시스템 구축
+								• 실사용자(공무원) 대상 정기점검에 참여해 직접 피드백 수렴 및
+								요구사항 반영하여 기능 개선 주도
 							</Text>
 						</View>
 
 						<View style={[styles.work, { marginBottom: 0 }]}>
 							<Text style={styles.subTitle}>기술 스택</Text>
-							<Text style={styles.text}>
-								Vue.js, Sass, Bootstrap, Apache ECharts, FullCalendar, MapLibre,
-								Carbone, pdfmake
+							<Text style={styles.bullet}>
+								• Frontend: Vue.js, Sass, Bootstrap, Apache ECharts,
+								FullCalendar, MapLibre, Carbone, pdfmake
 							</Text>
-							<Text style={styles.text}>
-								Linux, Node.js, Git, Slack, Playwright, Postman, Figma
+							<Text style={styles.bullet}>
+								• Backend/Infra: Linux, Node.js, ElasticSearch
+							</Text>
+							<Text style={styles.bullet}>
+								• Tool: Git, Slack, Playwright, Postman, Figma
 							</Text>
 						</View>
 					</View>
