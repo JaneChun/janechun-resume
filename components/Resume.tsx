@@ -128,7 +128,7 @@ export default function Resume() {
 							</Text>
 							<Text style={styles.bullet}>
 								• 조건부 필터 및 그리드 UI: 복합 조건 검색 구현 및 리팩토링으로
-								검색 편의성·조회 속도 최적화
+								검색 편의성·조회 속도 개선
 							</Text>
 							<Text style={styles.bullet}>
 								• 데이터 시각화: Apache ECharts를 활용한 센서 데이터 그래프 및
@@ -147,8 +147,8 @@ export default function Resume() {
 						<View style={styles.work}>
 							<Text style={styles.subTitle}>서비스 배포 및 운영 자동화</Text>
 							<Text style={styles.bullet}>
-								• System daemon / Docker 기반 서버에 직접 접속하여 정기적 서비스
-								배포 및 운영
+								• System daemon / Docker 환경에서 정기적 서비스 배포 및 운영
+								관리
 							</Text>
 							<Text style={styles.bullet}>
 								• Playwright 기반 자동 스크린샷 툴 개발로 분기별 보고서 작성
@@ -170,7 +170,7 @@ export default function Resume() {
 								배포 환경 유지
 							</Text>
 							<Text style={styles.bullet}>
-								• 기획자와 신규 버전 기능 협의, 디자이너 UI 설계안에 기반 화면
+								• 기획자와 신규 버전 기능 협의, 디자이너 UI 설계안에 기반한 화면
 								개발
 							</Text>
 							<Text style={styles.bullet}>
@@ -316,11 +316,12 @@ export default function Resume() {
 						'Expo',
 						'React',
 						'Vue.js',
-						'Linux',
 						'Redux',
 						'Zustand',
 						'React Query',
+						'Linux',
 						'Node.js',
+						'Elasticsearch',
 						'Firebase',
 						'AWS',
 						'Postman',
