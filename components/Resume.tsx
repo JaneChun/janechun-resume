@@ -69,25 +69,42 @@ export default function Resume() {
 			</View>
 
 			<View style={styles.section}>
-				<Text style={styles.text}>
-					안녕하세요, 사람들의 일상에 가치를 더하는 서비스를 만들고 싶은 개발자
-					천지은입니다.
-				</Text>
-				<Text style={styles.text}>
-					공공기관 시스템을 개발하며 웹 개발 경험을 쌓았으나
-				</Text>
-				<Text style={styles.text}>
-					사용자 수가 제한적이고 사용자와의 상호작용 중심의 개발과는 거리가 있어
-					늘 아쉬움이 있었습니다.
-				</Text>
-				<Text style={styles.text}>
-					더 많은 사람들의 일상 속에 스며드는 앱을 만들고 싶다는 마음으로,
-					모바일 개발로 전향하게 되었습니다.
-				</Text>
-				<Text style={styles.text}>
-					현재는 React Native로 모바일 앱을 직접 기획하고 개발하며, 일상을 더
-					편리하게 만드는 앱을 구현해나가고 있습니다.
-				</Text>
+				<View style={{ marginBottom: 8 }}>
+					<Text style={styles.text}>
+						안녕하세요,
+						<br />
+						사람들의 일상에 가치를 더하는 서비스를 만들고 싶은 개발자
+						천지은입니다.
+					</Text>
+				</View>
+
+				<View style={{ marginBottom: 8 }}>
+					<Text style={styles.text}>
+						공공기관 시스템을 개발하며 웹 개발 경험을 쌓았지만
+						<br />더 많은 사람들이 매일 사용하는 서비스를 만들고 싶다는 마음에
+						모바일 앱 개발에 도전하게 되었습니다.
+					</Text>
+				</View>
+
+				<View style={{ marginBottom: 8 }}>
+					<Text style={styles.text}>
+						React Native로 두 개의 앱을 처음부터 끝까지 직접 기획하고 개발해본
+						경험이 있습니다.
+						<br />
+						‘Indexly’는 iOS와 Android 모두 정식 출시했고, ‘모동숲 마켓’은 현재
+						iOS에서 베타테스트를 진행 중입니다.
+					</Text>
+				</View>
+
+				<View style={{ marginBottom: 8 }}>
+					<Text style={styles.text}>
+						새로운 기술을 배우고 서비스를 만들어가는 과정에서 몰입과 즐거움을
+						느낍니다.
+						<br />
+						앞으로도 더 많은 사람들에게 가치를 전하는 서비스를 직접 만들어
+						나가고 싶습니다.
+					</Text>
+				</View>
 			</View>
 
 			<View style={styles.section}>
@@ -117,65 +134,96 @@ export default function Resume() {
 
 						<Text style={styles.text}>
 							공공기관 대상 IoT 기반 시설관리 시스템의 프론트엔드 유지보수 및
-							기능 고도화
+							서비스 고도화
 						</Text>
 
 						<View style={[styles.work, { marginTop: 12 }]}>
-							<Text style={styles.subTitle}>프론트엔드 개발</Text>
+							<Text style={styles.subTitle}>지도 엔진 유지보수</Text>
 							<Text style={styles.bullet}>
-								• 지도 기능: MapTiler 및 MapLibre 기반 지도 기능 고도화 및
-								유지보수
+								• Mapbox 기반 사내 지도 서버와 MapLibre GL JS 연동,
+							</Text>
+							<Text style={[styles.bullet, { marginLeft: 21 }]}>
+								벡터 타일·레이어·오버레이 등 GIS UI의 디버깅 및 사용자 경험
+								개선을 담당했습니다.
 							</Text>
 							<Text style={styles.bullet}>
-								• 조건부 필터 및 그리드 UI: 복합 조건 검색 구현 및 리팩토링으로
-								검색 편의성·조회 속도 개선
-							</Text>
-							<Text style={styles.bullet}>
-								• 데이터 시각화: Apache ECharts를 활용한 센서 데이터 그래프 및
-								차트 구현
-							</Text>
-							<Text style={styles.bullet}>
-								• 일정 관리 UI 개선: FullCalendar 기반 센서 유지보수 관리 기능
-								개선 , 코드 및 데이터 구조 리팩토링으로 성능 최적화
-							</Text>
-							<Text style={styles.bullet}>
-								• 쿼리 최적화: ElasticSearch 집계 쿼리로 복수 API 호출 통합,
-								장기간 조회 시 페이지 로딩 속도 기존 대비 3배 이상 향상
+								• 단순 외부 지도 API 활용을 넘어, 자체 GIS 엔진 구조를 직접
+								이해하고 운영하는 경험을 쌓았습니다.
 							</Text>
 						</View>
 
 						<View style={styles.work}>
-							<Text style={styles.subTitle}>서비스 배포 및 운영 자동화</Text>
-							<Text style={styles.bullet}>
-								• System daemon / Docker 환경에서 정기적 서비스 배포 및 운영
-								관리
+							<Text style={styles.subTitle}>
+								작업 관리 시스템 전면 리팩토링
 							</Text>
 							<Text style={styles.bullet}>
-								• Playwright 기반 자동 스크린샷 툴 개발로 분기별 보고서 작성
-								시간 약 80% 단축
+								• 기존의 가상 데이터 기반 작업 관리 시스템을 직접 주도하여
+								실데이터 기반 구조로 근본적으로 개편했습니다.
 							</Text>
 							<Text style={styles.bullet}>
-								• Node.js로 Excel 자동 다운로드 스크립트 작성, 반복 업무
-								자동화로 업무 효율성 향상
+								• 데이터 모델과 프론트엔드 로직을 모두 재설계하고, API
+								개발자와도 긴밀하게 협업하여 필요한 엔드포인트와 기능을 신규
+								정의·구현함으로써
+							</Text>
+							<Text style={[styles.bullet, { marginLeft: 21 }]}>
+								서버 페이지네이션 및 대용량 쿼리 효율성을 크게 향상시켰습니다.
+							</Text>
+						</View>
+
+						<View style={styles.work}>
+							<Text style={styles.subTitle}>
+								대용량 데이터 조회 차트 성능 개선
 							</Text>
 							<Text style={styles.bullet}>
-								• Slackbot + Cron을 활용한 일일 Slack 자동 보고 시스템 구축
+								• ElasticSearch 집계 쿼리를 활용해 6개월 이상 대용량 센서 데이터
+								조회 시
+							</Text>
+							<Text style={[styles.bullet, { marginLeft: 21 }]}>
+								로딩 속도를 20,000ms → 1,000ms(95% 이상 단축)로 최적화했습니다.
+							</Text>
+						</View>
+
+						<View style={styles.work}>
+							<Text style={styles.subTitle}>서비스 배포</Text>
+							<Text style={styles.bullet}>
+								• Systemd 기반 서버에서는 SSH 접속 및 dist 파일 배포 후 서비스
+								재시작,
+							</Text>
+							<Text style={[styles.bullet, { marginLeft: 21 }]}>
+								Docker 환경에서는 이미지 업데이트 및 컨테이너 재시작을 통해
+								정기적으로 서비스를 배포·운영했습니다.
+							</Text>
+						</View>
+
+						<View style={styles.work}>
+							<Text style={styles.subTitle}>업무 자동화/운영 지원</Text>
+							<Text style={styles.bullet}>
+								• Playwright 스크립트를 작성하여 운영팀의 분기별 보고서 작성
+								시간을 80% 이상 단축했습니다.
+							</Text>
+							<Text style={styles.bullet}>
+								• Node.js 스크립트를 작성하여 대용량 데이터 Excel 다운로드를
+								자동화했습니다.
+							</Text>
+							<Text style={styles.bullet}>
+								• Slackbot과 Cron을 활용하여 일일 자동 보고 시스템을
+								구축했습니다.
 							</Text>
 						</View>
 
 						<View style={styles.work}>
 							<Text style={styles.subTitle}>협업 및 커뮤니케이션</Text>
 							<Text style={styles.bullet}>
-								• 백엔드·인프라 개발자와의 기능 연동 및 버전 대응 협업, 안정적인
-								배포 환경 유지
+								• 백엔드·인프라 개발자와 기능 연동과 배포를 협업하며, 장애 대응
+								및 안정적 운영을 경험했습니다.
 							</Text>
 							<Text style={styles.bullet}>
-								• 기획자와 신규 버전 기능 협의, 디자이너 UI 설계안에 기반한 화면
-								개발
+								• 실사용자(공무원) 대상 정기점검에 직접 참여하여 피드백을
+								수렴하고, 요구사항을 반영해 기능 개선을 주도했습니다.
 							</Text>
 							<Text style={styles.bullet}>
-								• 실사용자(공무원) 대상 정기점검에 참여해 직접 피드백 수렴 및
-								요구사항 반영하여 기능 개선 주도
+								• 기획자와 신규 화면 기능을 협의하고, 디자이너의 UI 설계안에
+								기반해 화면을 개발했습니다.
 							</Text>
 						</View>
 
@@ -190,6 +238,239 @@ export default function Resume() {
 							</Text>
 							<Text style={styles.bullet}>
 								• Tool: Git, Slack, Playwright, Postman, Figma
+							</Text>
+						</View>
+					</View>
+				</View>
+			</View>
+
+			<View style={styles.section}>
+				<Text style={styles.sectionTitle}>스킬</Text>
+				<View style={styles.skillContainer}>
+					{[
+						'TypeScript',
+						'React Native',
+						'Expo',
+						'React',
+						'Vue.js',
+						'Redux',
+						'Zustand',
+						'React Query',
+						'Linux',
+						'Node.js',
+						'Elasticsearch',
+						'Firebase',
+						'AWS',
+						'Postman',
+						'Git',
+						'Figma',
+					].map((name, i) => (
+						<Text key={i} style={styles.chip}>
+							{name}
+						</Text>
+					))}
+				</View>
+			</View>
+
+			<View style={styles.section}>
+				<Text style={styles.sectionTitle}>프로젝트</Text>
+				<View style={{ gap: 48 }}>
+					<View style={styles.columnsContainer}>
+						<Image
+							source={require('../assets/images/animal_logo.png')}
+							style={styles.image}
+							resizeMode='contain'
+						/>
+						<View>
+							<Text style={styles.title}>모동숲 마켓</Text>
+							<Text style={styles.text}>솔로 프로젝트</Text>
+							<Text style={styles.text}>2025.01.23 - </Text>
+
+							<Text style={styles.text}>
+								닌텐도 게임 “모여봐요 동물의 숲” 아이템 거래 앱
+							</Text>
+
+							<View style={[styles.work, { marginTop: 12 }]}>
+								<Text style={styles.subTitle}>기술 스택</Text>
+								<Text style={styles.text}>
+									TypeScript, React Native, Expo, Zustand, React Query, React
+									Hook Form, Zod, React Navigation,
+								</Text>
+								<Text style={styles.text}>Firebase, EAS Build</Text>
+							</View>
+
+							<View style={[styles.work, { marginBottom: 8 }]}>
+								<Text style={styles.subTitle}>주요 기능</Text>
+								<Text style={styles.bullet}>
+									- Firebase OpenID Connect 기반 네이버·카카오·Apple 소셜
+									로그인, 회원 가입/탈퇴, 프로필 수정 등 회원 인증
+								</Text>
+								<Text style={styles.bullet}>
+									- React Hook Form + Zod을 활용한 사용자 입력 유효성 검사
+								</Text>
+								<Text style={styles.bullet}>
+									- 게시글·댓글 CRUD 및 Algolia 풀텍스트 검색 등 커뮤니티 기능
+								</Text>
+								<Text style={styles.bullet}>
+									- React Query useInfiniteQuery 훅을 사용한 게시글·댓글 목록
+									무한 스크롤
+								</Text>
+								<Text style={styles.bullet}>
+									- 게시글·댓글·채팅 신고, 비속어 필터링, 유저 간 차단
+								</Text>
+								<Text style={styles.bullet}>
+									- Firebase Realtime Database 기반 1:1 실시간 채팅 및 알림
+								</Text>
+								<Text style={styles.bullet}>
+									- Expo Notifications + Firebase Cloud Functions을 활용한 푸시
+									알림
+								</Text>
+							</View>
+
+							<View style={styles.linksContainer}>
+								<Link href='https://github.com/JaneChun/animal-crossing-trading-expo-app'>
+									<Text style={styles.link}>
+										<Feather name='link' style={styles.icon} />
+										<Text>GitHub</Text>
+									</Text>
+								</Link>
+
+								<Link href='https://testflight.apple.com/join/RBqVJ9GB'>
+									<Text style={styles.link}>
+										<Feather name='link' style={styles.icon} />
+										<Text>App Store(Beta)</Text>
+									</Text>
+								</Link>
+							</View>
+						</View>
+					</View>
+
+					<View style={styles.columnsContainer}>
+						<Image
+							source={require('../assets/images/indexly_logo.png')}
+							style={styles.image}
+							resizeMode='contain'
+						/>
+						<View>
+							<Text style={styles.title}>indexly</Text>
+							<Text style={styles.text}>솔로 프로젝트</Text>
+							<Text style={styles.text}>2025.01.15 - 2025.01.21</Text>
+
+							<Text style={styles.text}>인덱스로 관리하는 투두 관리 앱</Text>
+
+							<View style={[styles.work, { marginTop: 12 }]}>
+								<Text style={styles.subTitle}>기술 스택</Text>
+								<Text style={styles.text}>
+									React Native, Expo, Expo SQLite, EAS Build
+								</Text>
+							</View>
+
+							<View style={[styles.work, { marginBottom: 8 }]}>
+								<Text style={styles.subTitle}>주요 기능</Text>
+								<Text style={styles.bullet}>
+									- Expo SQLite를 활용한 투두 데이터의 로컬 저장 및 오프라인
+									환경 지원
+								</Text>
+								<Text style={styles.bullet}>
+									- 외부 라이브러리 없이 FlatList 간 커스텀 드래그 앤 드롭 기능
+									직접 구현
+								</Text>
+							</View>
+
+							<View style={styles.linksContainer}>
+								<Link href='https://github.com/JaneChun/indexly'>
+									<Text style={styles.link}>
+										<Feather name='link' style={styles.icon} />
+										<Text>GitHub</Text>
+									</Text>
+								</Link>
+
+								<Link href='https://apps.apple.com/us/app/indexly-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EB%A1%9C-%EC%A0%95%EB%A6%AC%ED%95%98%EB%8A%94-%ED%95%A0-%EC%9D%BC-%EA%B4%80%EB%A6%AC/id6740793736'>
+									<Text style={styles.link}>
+										<Feather name='link' style={styles.icon} />
+										<Text>App Store</Text>
+									</Text>
+								</Link>
+
+								<Link href='https://play.google.com/store/apps/details?id=com.janechun.indexly'>
+									<Text style={styles.link}>
+										<Feather name='link' style={styles.icon} />
+										<Text>Google Play</Text>
+									</Text>
+								</Link>
+							</View>
+						</View>
+					</View>
+				</View>
+			</View>
+
+			<View style={[styles.section, styles.certRow]}>
+				<View style={styles.certCol}>
+					<Text style={[styles.sectionTitle, styles.titleWithBorder]}>
+						학력
+					</Text>
+					<View style={{ gap: 16 }}>
+						<View style={styles.columnsContainer}>
+							<Image
+								source={require('../assets/images/university_logo.svg')}
+								style={styles.image}
+								resizeMode='contain'
+							/>
+
+							<View>
+								<Text style={styles.title}>한양대학교</Text>
+								<Text style={styles.text}>
+									<Text style={styles.text}>2017.03 - 2022.08</Text>
+									<Text style={styles.divider}>|</Text>
+									<Text style={styles.text}>영미언어문화학과</Text>
+									<Text style={styles.divider}>|</Text>
+									<Text style={styles.text}>3.8 / 4.5</Text>
+								</Text>
+							</View>
+						</View>
+
+						<View style={styles.columnsContainer}>
+							<Image
+								source={require('../assets/images/bootcamp_logo.jpg')}
+								style={styles.image}
+								resizeMode='contain'
+							/>
+							<View>
+								<Text style={styles.title}>코드스테이츠</Text>
+								<Text style={styles.text}>
+									<Text style={styles.text}>2022.08 - 2023.02</Text>
+									<Text style={styles.divider}>|</Text>
+									<Text style={styles.text}>프론트엔드 부트캠프 41기</Text>
+								</Text>
+							</View>
+						</View>
+					</View>
+				</View>
+
+				<View style={styles.certCol}>
+					<Text style={[styles.sectionTitle, styles.titleWithBorder]}>
+						스터디
+					</Text>
+					<View style={styles.columnsContainer}>
+						<Image
+							source={require('../assets/images/recursive_logo.png')}
+							style={styles.image}
+							resizeMode='contain'
+						/>
+						<View>
+							<Text style={styles.title}>Recursive</Text>
+							<Text style={styles.text}>
+								<Text style={styles.text}>2022.11 - 진행중</Text>
+								<Text style={styles.divider}>|</Text>
+								<Link href='https://github.com/JaneChun/algorithm'>
+									<Text style={styles.link}>
+										<Feather name='link' style={styles.icon} />
+										<Text>GitHub</Text>
+									</Text>
+								</Link>
+							</Text>
+							<Text style={styles.text}>
+								매주 알고리즘 문제를 풀고 디스코드에서 풀이를 공유하는 스터디
 							</Text>
 						</View>
 					</View>
@@ -266,191 +547,6 @@ export default function Resume() {
 					</View>
 				</View>
 			</View>
-
-			<View style={styles.section}>
-				<Text style={styles.sectionTitle}>학력</Text>
-				<View style={{ gap: 16 }}>
-					<View style={styles.columnsContainer}>
-						<Image
-							source={require('../assets/images/university_logo.svg')}
-							style={styles.image}
-							resizeMode='contain'
-						/>
-
-						<View>
-							<Text style={styles.title}>한양대학교</Text>
-							<Text style={styles.text}>
-								<Text style={styles.text}>2017.03 - 2022.08</Text>
-								<Text style={styles.divider}>|</Text>
-								<Text style={styles.text}>영미언어문화학과</Text>
-								<Text style={styles.divider}>|</Text>
-								<Text style={styles.text}>3.8 / 4.5</Text>
-							</Text>
-						</View>
-					</View>
-
-					<View style={styles.columnsContainer}>
-						<Image
-							source={require('../assets/images/bootcamp_logo.jpg')}
-							style={styles.image}
-							resizeMode='contain'
-						/>
-						<View>
-							<Text style={styles.title}>코드스테이츠</Text>
-							<Text style={styles.text}>
-								<Text style={styles.text}>2022.08 - 2023.02</Text>
-								<Text style={styles.divider}>|</Text>
-								<Text style={styles.text}>프론트엔드 부트캠프 41기</Text>
-							</Text>
-						</View>
-					</View>
-				</View>
-			</View>
-
-			<View style={styles.section}>
-				<Text style={styles.sectionTitle}>스킬</Text>
-				<View style={styles.skillContainer}>
-					{[
-						'TypeScript',
-						'React Native',
-						'Expo',
-						'React',
-						'Vue.js',
-						'Redux',
-						'Zustand',
-						'React Query',
-						'Linux',
-						'Node.js',
-						'Elasticsearch',
-						'Firebase',
-						'AWS',
-						'Postman',
-						'Git',
-						'Figma',
-					].map((name, i) => (
-						<Text key={i} style={styles.chip}>
-							{name}
-						</Text>
-					))}
-				</View>
-			</View>
-
-			<View style={styles.section}>
-				<Text style={styles.sectionTitle}>프로젝트</Text>
-				<View style={{ gap: 48 }}>
-					<View style={styles.columnsContainer}>
-						<Image
-							source={require('../assets/images/indexly_logo.png')}
-							style={styles.image}
-							resizeMode='contain'
-						/>
-						<View>
-							<Text style={styles.title}>indexly</Text>
-							<Text style={styles.text}>솔로 프로젝트</Text>
-							<Text style={styles.text}>2025.01.15 - 2025.01.21</Text>
-
-							<Text style={styles.text}>인덱스로 관리하는 투두 관리 앱</Text>
-
-							<View style={[styles.work, { marginTop: 12 }]}>
-								<Text style={styles.subTitle}>기술 스택</Text>
-								<Text style={styles.text}>
-									React Native, Expo, Expo SQLite, EAS Build
-								</Text>
-							</View>
-
-							<View style={[styles.work, { marginBottom: 8 }]}>
-								<Text style={styles.subTitle}>주요 기능</Text>
-								<Text style={styles.bullet}>
-									- Expo SQLite를 활용한 투두 데이터의 로컬 저장 및 오프라인
-									환경 지원
-								</Text>
-								<Text style={styles.bullet}>
-									- 외부 라이브러리 없이 FlatList 간 커스텀 드래그 앤 드롭 기능
-									직접 구현
-								</Text>
-							</View>
-
-							<View style={styles.linksContainer}>
-								<Link href='https://github.com/JaneChun/indexly'>
-									<Text style={styles.link}>
-										<Feather name='link' style={styles.icon} />
-										<Text>GitHub</Text>
-									</Text>
-								</Link>
-
-								<Link href='https://apps.apple.com/us/app/indexly-%EC%9D%B8%EB%8D%B1%EC%8A%A4%EB%A1%9C-%EC%A0%95%EB%A6%AC%ED%95%98%EB%8A%94-%ED%95%A0-%EC%9D%BC-%EA%B4%80%EB%A6%AC/id6740793736'>
-									<Text style={styles.link}>
-										<Feather name='link' style={styles.icon} />
-										<Text>AppStore</Text>
-									</Text>
-								</Link>
-							</View>
-						</View>
-					</View>
-
-					<View style={styles.columnsContainer}>
-						<Image
-							source={require('../assets/images/animal_logo.png')}
-							style={styles.image}
-							resizeMode='contain'
-						/>
-						<View>
-							<Text style={styles.title}>모동숲 마켓</Text>
-							<Text style={styles.text}>솔로 프로젝트</Text>
-							<Text style={styles.text}>2025.01.23 -</Text>
-
-							<Text style={styles.text}>
-								닌텐도 게임 “모여봐요 동물의 숲” 아이템 거래 앱
-							</Text>
-
-							<View style={[styles.work, { marginTop: 12 }]}>
-								<Text style={styles.subTitle}>기술 스택</Text>
-								<Text style={styles.text}>
-									TypeScript, React Native, Expo, Zustand, React Query, React
-									Hook Form, Zod, React Navigation,
-								</Text>
-								<Text style={styles.text}>Firebase, EAS Build</Text>
-							</View>
-
-							<View style={[styles.work, { marginBottom: 8 }]}>
-								<Text style={styles.subTitle}>주요 기능</Text>
-								<Text style={styles.bullet}>
-									- Firebase OpenID Connect 기반 네이버·카카오 OAuth 로그인,
-									회원 가입/탈퇴, 프로필 수정 등 회원 인증 기능 구현
-								</Text>
-								<Text style={styles.bullet}>
-									- React Hook Form + Zod를 활용한 사용자 입력 유효성 검사 적용
-								</Text>
-								<Text style={styles.bullet}>
-									- 게시글·댓글 작성, 수정, 삭제 및 키워드 검색 기능 등 커뮤니티
-									기능 구현
-								</Text>
-								<Text style={styles.bullet}>
-									- React Query useInfiniteQuery 훅을 사용하여 게시글·댓글 목록
-									무한 스크롤 구현
-								</Text>
-								<Text style={styles.bullet}>
-									- Firebase Realtime Database 기반 1:1 실시간 채팅 및 알림 기능
-									구현
-								</Text>
-								<Text style={styles.bullet}>
-									- Expo Notifications + Firebase Cloud Functions를 활용한 푸시
-									알림 기능 구현
-								</Text>
-							</View>
-
-							<View style={styles.linksContainer}>
-								<Link href='https://github.com/JaneChun/animal-crossing-trading-expo-app'>
-									<Text style={styles.link}>
-										<Feather name='link' style={styles.icon} />
-										<Text>GitHub</Text>
-									</Text>
-								</Link>
-							</View>
-						</View>
-					</View>
-				</View>
-			</View>
 		</ScrollView>
 	);
 }
@@ -466,7 +562,7 @@ const styles = StyleSheet.create({
 		marginBottom: 12,
 	},
 	section: {
-		marginBottom: 60,
+		marginBottom: 50,
 	},
 	contact: {
 		flexDirection: 'row',
@@ -508,10 +604,10 @@ const styles = StyleSheet.create({
 		marginBottom: 4,
 	},
 	subTitle: {
-		fontWeight: 500,
+		fontWeight: 600,
 	},
 	work: {
-		marginBottom: 20,
+		marginBottom: 12,
 	},
 	bullet: {
 		marginLeft: 12,
@@ -530,7 +626,7 @@ const styles = StyleSheet.create({
 		height: 30,
 	},
 	icon: {
-		marginRight: 4,
+		marginRight: 2,
 	},
 	divider: {
 		color: colors.icon,
